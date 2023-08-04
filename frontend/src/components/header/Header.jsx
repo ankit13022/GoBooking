@@ -82,8 +82,8 @@ const Header = ({ type }) => {
               A lifetime of discounts? It's Genius.
             </h1>
             <p className="headerDesc">
-              Get rewarded for your travels unlock instant savings of 10% or
-              more with a free GoBooking account
+              Get rewarded for your travels – unlock instant savings of 10% or
+              more with a free Lamabooking account
             </p>
             <button className="headerBtn">Sign in / Register</button>
             <div className="headerSearch">
@@ -91,7 +91,7 @@ const Header = ({ type }) => {
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
                 <input
                   type="text"
-                  placeholder="where you want to go?"
+                  placeholder="Where are you going?"
                   className="headerSearchInput"
                   onChange={(e) => setDestination(e.target.value)}
                 />

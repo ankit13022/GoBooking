@@ -6,6 +6,7 @@ import users from "./routes/users.js";
 import rooms from "./routes/rooms.js";
 import hotels from "./routes/hotels.js";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 const app = express();
 dotenv.config();
 
@@ -17,7 +18,7 @@ const connect = async () => {
         throw error;
     }
 };
-
+app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
 app.use("/api/auth", auth);
